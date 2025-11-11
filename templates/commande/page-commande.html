@@ -301,7 +301,8 @@
                         <div
                             class="detail border-1px padding-20 raduis-10 height-50 d-flex gap-10 jc-center ai-center size20 cursor-active">
                             <i class="fa-solid fa-pen-to-square"></i>
-                            Modifier
+                           <a class="color-black" href="#mod"> Modifier </a>
+                            
                         </div>
                     </label>
                     <div class="border-1px bg-bleu-ciel padding-20 color-white height-50 d-flex width-100p jc-center ai-center padding-left-right-20 raduis-10 gap-10"
@@ -351,7 +352,7 @@
                         <div
                             class="detail border-1px padding-20 raduis-10 height-50 d-flex gap-10 jc-center ai-center size20 cursor-active">
                             <i class="fa-solid fa-pen-to-square"></i>
-                            Modifier
+                           <a class="color-black" href="#mod"> Modifier </a>
                         </div>
                     </label>
                     <label
@@ -429,6 +430,46 @@
         </div>
 
     </div>
+    <div id="mod">
+         <div id="mod-cmnd-page" class="position-fixed d-flex jc-center ai-center">
+            <div id="mod-cmnd" class="profile raduis-20 d-flex fd-column gap-20 padding-50 width-30pc bg-white">
+                <div
+                    class="d-flex jc-between padding-top-50p padding-bottom-50p width-100 border-bottom-color-secondaire">
+                    <span class="d-flex gap-10"><i class="fa-solid fa-pen-to-square"></i> Modifier la commande</span><a size-32 href="#voir-commande">X</a></div>
+                <div class=" padding-top-50p">Statut de la commande</div>
+                <span>statut :</span>
+                <select class="padding-10 raduis-10 bg-color-secondaire" name="" id="">
+                    <option value="">En attente</option>
+                </select>
+                <div class="padding-top-50p">Information de livraison</div>
+                <span>Address de livraison</span>
+                <textarea class="padding-bottom-50p raduis-10 padding-20 color-secondaire" name="" id="">Rue 65, ville 44</textarea>
+                <div>Date de livraison prevue :</div>
+                <input type="date" value="20025-11-12">
+                <div class="padding-top-50p">Note</div>
+                <span>Notes internes</span>
+                <textarea class="padding-bottom-50p raduis-10 padding-20 color-secondaire" name="" id="">Note interne pour l'équipe</textarea>
+               
+                
+                <div class="d-flex gap-20 jc-end padding-20">
+                    <div class="padding-20 raduis-10 border-1px d-flex gap-10">  <a class="color-black" href="#mode-cmd-page">Annuler</a></div>
+                    <div class="padding-20 raduis-10 border-1px d-flex jc-center gap-10 bg-blue-button color-white">
+                       <a class="color-white" href="#mod-cmd-page">Sauvegarder</a> </div>
+                </div>
+
+
+
+
+            </div>
+
+        </div>
+
+    </div>
+    
+   
+
+    </div>
+
 
 
 </body>
