@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body id="body">
+
+    <div id="header" class="position-relative width-100 d-flex jc-between bg-white ai-center">
+        <div class="btn-mob d-flex fd-row jc-start ai-center gap-20 ">
+            <label for="menu-mob">
+                <a href="#header"><i id="btn" class="fa-solid fa-list" tabindex="0"></i></a>
+
+                <input type="radio" name="men" id="menu-mob" hidden>
+            </label>
+
+            <span class="h2">Gestion de Stock - Produits Electroniques</span>
+        </div>
+        <div class="d-flex fd-row jc-end ai-center gap-20 flex-1">
+            <div id="notification" class="notification d-flex jc-center ai-center position-relative"><i
+                    class="fa-solid fa-bell"></i>
+                <div class="position-absolute d-flex jc-center ai-center">3</div>
+            </div>
+            <div id="administration" class="administration color-secondaire size20">Administrateur</div>
+        </div>
+        <!-- position absolute -->
+        <div id="dash"
+            class="dashboard-menu position-absolute top-0 left-0 d-grid gt-columns gt-rows-100px-1fr-300px gap-20 bg-blue1 width-300p height-100vh color-white">
+
+
+        </div>
+        <div id="dash" class="position-absolute top-0 left-0 d-flex fd-column gap-20">
+            <div class="dashboard d-flex ai-end padding-40 h2">Dashboard</div>
+            <div class="size24 menu d-flex fd-column gap-20 flex-2">
+                <label for="lien1"><input class="lienmenu" type="radio" name="lienmenu" id="lien1" checked hidden>
+                    <a href="../home/home.html">Tableau de Bord</a>
+                </label>
+                <label for="lien2"><input class="lienmenu" type="radio" name="lienmenu" id="lien2" hidden>
+                    <a href="../analytic/page-analytic.html">Analytics</a>
+                </label>
+                <label for="lien3"><input class="lienmenu" type="radio" name="lienmenu" id="lien3" hidden>
+                    <a href="../commande/page-commande.html">Commandes</a>
+                </label>
+                <label for="lien4"><input class="lienmenu" type="radio" name="lienmenu" id="lien4" hidden>
+                    <a href="../parametre/page-parametre.html">Parametres</a>
+                </label>
+                <label for="lien5"><input class="lienmenu" type="radio" name="lienmenu" id="lien5" hidden>
+                    <a href="../rapport/page-rapport.html">Rapports</a>
+                </label>
+                <label for="lien6"> <input class="lienmenu" type="radio" name="lienmenu" id="lien6" hidden>
+                    <a href="../notification/page-notification.html">Notifications</a>
+                </label>
+
+            </div>
+            <div class="size20 dashboard-footer d-flex fd-column jc-center ai-center gap-20 flex-1">
+                <div class="footer-role d-flex jc-center ai-center">
+                    <div class="ico"> </div>
+                    <div class="d-flex fd-column gap-10">
+                        <span class="d-flex jc-start ai-center">Administrateur</span>
+                        <span class="size16 d-flex jc-start ai-center">Gestionnaire</span>
+                    </div>
+                </div>
+                <div class="footer-profile d-flex jc-center ai-center"><a href="#profile-config">Mon Profile</a></div>
+                <div class="footer-deconnexion d-flex jc-center ai-center"><a href="../../index.html">Deconnexion</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="profile-config" class="position-absolute d-flex jc-center ai-center">
+        <div id="profile" class="profile raduis-20">
+            <div class="header-profile d-flex jc-between ai-center padding-50">
+                <div class="d-flex ai-center">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div id="mon-profile" class="size28">Mon Profile</div>
+                </div>
+                <a href="#body" id="sortie-profile" class="sortie style-none"></a>
+            </div>
+            <div class="bloc-image-profile d-flex fd-column ai-center jc-center gap-20">
+                <div class="image-profile"></div>
+                <div class="changer-image size24 padding-10 border-1px raduis-10">Changer la photo</div>
+            </div>
+            <div class="d-grid gt-columns-1fr-1fr padding-50 gap-20 row-gap-40">
+                <div>
+                    <label for="" class="line-height-2 size20">
+                        Nom:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="Administrateur" placeholder="" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label class="line-height-2 size20" for="">
+                        Prènom:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20" value="Jean"
+                            placeholder="" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label class="line-height-2 size20" for="">
+                        Email:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="admin@gmail.com" placeholder="" type="email">
+                    </label>
+                </div>
+                <div>
+                    <label class="line-height-2 size20" for="">
+                        Téléphone:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="+2233 544 55 76 44" placeholder="" type="tel">
+                    </label>
+                </div>
+                <div class="col-2">
+                    <label class="line-height-2 size20" for="">
+                        Role:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15  size20"
+                            value="Gestionnaire" placeholder="" type="text">
+                    </label>
+                </div>
+                <div class="col-2">
+                    <label class="line-height-2 size20" for="">
+                        Derniere Connexion:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="15 Janvier 2025" placeholder="" type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="profile-footer d-flex fd-row jc-end gap-20 padding-50">
+                <button class="height-50 border-1px width-150p raduis-10 d-flex centre size20"><a class="style-none"
+                        href="#body">Fermer</a> </button>
+                <button
+                    class="height-50 border-1px width-200p raduis-10 d-flex centre size20 bg-blue-button color-white">Sauvegarder</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contenu">
+        <div class="size32 fw-bold padding-top-50p padding-bottom-20p">Tableau De Bord Principale</div>
+        <div class="h3 color-secondaire padding-bottom-50p">Gestion des stocks de produits électroniques</div>
+        <div class="d-grid gt-columns-1fr-1fr-1fr-1fr gap-30 padding-bottom-50p ">
+            <div class="card trans-hover d-flex gap-20 padding-20 border-1px raduis-20 bg-white">
+                <div class="card-icon d-flex ai-center jc-center bg-blue-button">
+                    <i class="fa-solid fa-boxes-stacked size32 color-white"></i>
+                </div>
+                <div class="d-flex fd-column gap-10">
+                    <span class="h1">1,234</span>
+                    <span class="color-secondaire size20">Produits en Stock</span>
+                </div>
+            </div>
+            <div class="card d-flex trans-hover gap-20 padding-20 border-1px raduis-20 bg-white">
+                <div class="card-icon d-flex ai-center jc-center bg-orange">
+                    <i class="fa-solid fa-triangle-exclamation size32 color-white"></i>
+                </div>
+                <div class="d-flex fd-column gap-10">
+                    <span class="h1">23</span>
+                    <span class="color-secondaire size20">Stock Faible</span>
+                </div>
+            </div>
+            <div class="card d-flex trans-hover gap-20 padding-20 border-1px raduis-20 bg-white">
+                <div class="card-icon d-flex ai-center jc-center bg-vert">
+                    <i class="fa-solid fa-euro-sign color-white size32"></i>
+                </div>
+                <div class="d-flex fd-column gap-10">
+                    <span class="h1">€45,678</span>
+                    <span class="color-secondaire size20">Valeur Totale</span>
+                </div>
+            </div>
+            <div class="card d-flex trans-hover gap-20 padding-20 border-1px raduis-20 bg-white">
+                <div class="card-icon d-flex ai-center jc-center bg-gris">
+                    <i class="fa-solid fa-truck size32 color-white"></i>
+                </div>
+                <div class="d-flex fd-column gap-10">
+                    <span class="h1">12</span>
+                    <span class="color-secondaire size20">Commandes en Attente</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tableau -->
+        <div id="row-column" class="d-flex fd-row width-100 border-1px padding-40 jc-between raduis-top-20 ai-center">
+            <div class="size30">Gestion des Stocks</div>
+            <div class="d-flex ai-start"><input class="height-50_ border-1px width-500p raduis-10 padding-20"
+                    type="search" name="" id="" placeholder="🔍 Rechercher un produit"></div>
+            <div class="d-flex gap-20">
+                <button class="width-300p height-50_ border-none bg-blue-button raduis-10 color-white size28"> <i
+                        class="fa-solid fa-plus"></i> Ajouter Produit</button>
+                <button class="width-200p raduis-10 d-flex gap-10 jc-center ai-center border-1px bg-white size28"><i class="fa-solid fa-download"></i> Exporter</button>
+            </div>
+        </div>
+        <table id="table-1" class="table-1 width-100 bg-white">
+
+            <thead>
+                <tr class="couleur-secondaire-hov">
+                    <th class="size20">ID</th>
+                    <th class="size20">PRODUIT</th>
+                    <th class="size20">CATEGORIE</th>
+                    <th class="size20">STOCK</th>
+                    <th class="size20">PRIX</th>
+                    <th class="size20">STATUS</th>
+                    <th class="size20">ACTIONS</th>
+
+                </tr>
+            </thead>
+            <tbody>
+                <tr class="couleur-secondaire-hov">
+                    <td class="color-secondaire"></td>
+                    <td>
+                        <div class="d-flex ai-center jc-start gap-20">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="d-flex fd-column gap-10">
+                                <div class="h3">MacBook Pro "16"</div>
+                                <div class="color-secondaire size24">Apple M3 Pr</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="violet">Laptop</span> </td>
+                    <td><span class="vert">15</span></td>
+                    <td class="color-secondaire">€2,899</td>
+                    <td><span class="vert">Actif</span></td>
+                    <td>
+                        <div class="d-flex gap-20 jc-center"> <i class="fa-solid fa-pen-to-square"></i> <i
+                                class="fa-solid fa-trash"></i> </div>
+                    </td>
+                </tr>
+                <tr class="couleur-secondaire-hov">
+                    <td class="color-secondaire"></td>
+                    <td>
+                        <div class="d-flex ai-center jc-start gap-20">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="d-flex fd-column gap-10">
+                                <div class="h3">MacBook Pro "16"</div>
+                                <div class="color-secondaire size24">Apple M3 Pr</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="vert">Laptop</span></td>
+                    <td><span class="jaune">15</span></td>
+                    <td class="color-secondaire">€2,899</td>
+                    <td><span class="vert">Actif</span></td>
+                    <td>
+                        <div class="d-flex gap-20 jc-center"> <i class="fa-solid fa-pen-to-square"></i> <i
+                                class="fa-solid fa-trash"></i> </div>
+
+                    </td>
+                </tr>
+                <tr class="couleur-secondaire-hov">
+                    <td class="color-secondaire"></td>
+                    <td>
+                        <div class="d-flex ai-center jc-start gap-20">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="d-flex fd-column gap-10">
+                                <div class="h3">MacBook Pro "16"</div>
+                                <div class="color-secondaire size24">Apple M3 Pr</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="jaune">Laptop</span></td>
+                    <td><span class="rose">15</span></td>
+                    <td class="color-secondaire">€2,899</td>
+                    <td><span class="jaune">Actif</span></td>
+                    <td>
+                        <div class="d-flex gap-20 jc-center"> <i class="fa-solid fa-pen-to-square"></i> <i
+                                class="fa-solid fa-trash"></i> </div>
+
+                    </td>
+                </tr>
+                <tr class="couleur-secondaire-hov">
+                    <td class="color-secondaire"></td>
+                    <td>
+                        <div class="d-flex ai-center jc-start gap-20">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="d-flex fd-column gap-10">
+                                <div class="h3">MacBook Pro "16"</div>
+                                <div class="color-secondaire size24">Apple M3 Pr</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="violet">Laptop</span></td>
+                    <td><span class="vert">15</span></td>
+                    <td class="color-secondaire">€2,899</td>
+                    <td><span class="vert">Actif</span></td>
+                    <td>
+                        <div class="d-flex gap-20 jc-center"> <i class="fa-solid fa-pen-to-square"></i> <i
+                                class="fa-solid fa-trash"></i> </div>
+
+                    </td>
+                </tr>
+                <tr class="couleur-secondaire-hov">
+                    <td class="color-secondaire"></td>
+                    <td>
+                        <div class="d-flex ai-center jc-start gap-20">
+                            <div><i class="fa-solid fa-laptop"></i></div>
+                            <div class="d-flex fd-column gap-10">
+                                <div class="h3">MacBook Pro "16"</div>
+                                <div class="color-secondaire size24">Apple M3 Pr</div>
+                            </div>
+                        </div>
+                    </td>
+                    <td><span class="rose">Laptop</span></td>
+                    <td><span class="jaune">15</span></td>
+                    <td class="color-secondaire">€2,899</td>
+                    <td><span class="vert">Actif</span></td>
+                    <td class="end">
+                        <div class="d-flex gap-20 jc-center"> <i class="fa-solid fa-pen-to-square"></i> <i
+                                class="fa-solid fa-trash"></i> </div>
+
+                    </td>
+                </tr>
+
+            </tbody>
+        </table>
+
+
+
+    </div>
+
+</body>
+
+</html>

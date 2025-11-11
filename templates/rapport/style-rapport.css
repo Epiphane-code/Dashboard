@@ -1,0 +1,13 @@
+table{
+    border-collapse: collapse;
+    border: none;
+    background-color: white;
+    padding: 20px;
+}
+th, td{
+    text-align: start;
+    padding: 20px;
+}
+th{
+    background-color: #F8FAFD;
+}

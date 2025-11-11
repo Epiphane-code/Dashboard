@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="CSS/style.css">
+    <link rel="stylesheet" href="CSS/style2.css">
+</head>
+
+<body>
+    <div class="container d-flex jc-center ai-center">
+        <div id="register" class="login-register raduis-20 position-relative">
+            <form id="login-form" class="d-flex fd-column gap-20 jc-center " action="templates/home/home.html">
+                <span class="h1 padding-40 align-center color-blue-sombre">Connexion à StockManager Dashboard</span>
+                <input name="user" class="" type="email border-1px height-50" placeholder="Nom d'utilisateur ou email" required>
+                <input name="pass" class="" type="password border-1px height-50 " placeholder="Mot de passe" required>
+                <label class=" d-flex ai-center gap-20" for="souvenir">
+                    <input type="checkbox" name="souvenir" id="souvenir">
+                    Se Souvenir de moi
+                </label>
+                <button id="connexion" class="connexion color-white style-none color-white h5" type="submit">Se
+                        Connecter</button>
+                <div class="d-flex fd-column ai-center gap-20 size-20">
+                    <div>Mot de passe oublié ? <a href="#" class="color-blue-sombre h5">Reinitialiser</a></div>
+                    <div>Vous n'avez pas de compte ? <a class="style-none color-blue-sombre h5" href="#register">Inscrivez-vous</a> </div>
+                </div>
+
+            </form>
+
+            <!-- position absolute -->
+            <div id="register-form" class="position-absolute d-flex fd-column ">
+                <form class="d-flex fd-column gap-30 padding-40 register" action="">
+                    <span class="inscrip h1 width-500p align-center d-flex jc-center ai-center color-blue-sombre margin-auto">S'inscrire à StockManager Dashboard</span>
+                    <input class="border-1px height-50" type="text" placeholder="Nom ">
+                    <input class="border-1px height-50" type="text" placeholder="Prenom ">
+                    <input class="border-1px height-50" type="email" placeholder="mail ">
+                    <input class="border-1px height-50" type="password" placeholder="Mot de passe ">
+                    <input class="border-1px height-50" type="password" placeholder="Confirmer votre mot de passe ">
+                    <button id=inscrire class="connexion color-white" type="submit"><a class="style-none color-white h5"
+                            href="#">S'inscrire</a></button>
+                </form>
+            </div>
+            <div class="bienvenue position-absolute color-white align-center d-flex fd-column ai-center padding-40">
+                <div class="rond d-flex centre color-blue-sombre">
+                    SM
+                </div>
+                <div class="h1 padding-40">Bienvenue dans StockManager</div>
+                <div class="size-20 line-height-2">Gerer vos appareils Electroniques, vos entrés et sorties de stock facilement avec une interface
+                    claire et rapide
+                </div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../../CSS/style.css">
+    <link rel="stylesheet" href="home-style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+</head>
+
+<body id="body">
+
+    <div id="header" class="position-relative width-100 d-flex jc-between bg-white ai-center">
+        <div class="btn-mob d-flex fd-row jc-start ai-center gap-20 ">
+            <label for="menu-mob">
+                <a href="#header"><i id="btn" class="fa-solid fa-list" tabindex="0"></i></a>
+
+                <input type="radio" name="men" id="menu-mob" hidden>
+            </label>
+
+            <span class="h2">Gestion de Stock - Produits Electroniques</span>
+        </div>
+        <div class="d-flex fd-row jc-end ai-center gap-20 flex-1">
+            <div id="notification" class="notification d-flex jc-center ai-center position-relative"><i
+                    class="fa-solid fa-bell"></i>
+                <div class="position-absolute d-flex jc-center ai-center">3</div>
+            </div>
+            <div id="administration" class="administration color-secondaire size20">Administrateur</div>
+        </div>
+        <!-- position absolute -->
+        <div id="dash"
+            class="dashboard-menu position-absolute top-0 left-0 d-grid gt-columns gt-rows-100px-1fr-300px gap-20 bg-blue1 width-300p height-100vh color-white">
+
+
+        </div>
+        <div id="dash" class="index-max position-absolute top-0 left-0 d-flex fd-column gap-20">
+            <div class="dashboard d-flex ai-end padding-40 h2">Dashboard</div>
+            <div class="size24 menu d-flex fd-column gap-20 flex-2">
+                <label for="lien1"><input class="lienmenu" type="radio" name="lienmenu" id="lien1" hidden>
+                    <a href="../home/home.html">Tableau de Bord</a>
+                </label>
+                <label for="lien2"><input class="lienmenu" type="radio" name="lienmenu" id="lien2" hidden>
+                    <a href="../analytic/page-analytic.html">Analytics</a>
+                </label>
+                <label for="lien3"><input class="lienmenu" type="radio" name="lienmenu" id="lien3" hidden>
+                    <a href="../commande/page-commande.html">Commandes</a>
+                </label>
+                <label for="lien4"><input class="lienmenu" type="radio" name="lienmenu" id="lien4" hidden>
+                    <a href="../parametre/page-parametre.html">Parametres</a>
+                </label>
+                <label for="lien5"><input class="lienmenu" type="radio" name="lienmenu" id="lien5" hidden>
+                    <a href="../rapport/page-rapport.html">Rapports</a>
+                </label>
+                <label for="lien6"> <input class="lienmenu" type="radio" name="lienmenu" id="lien6" checked hidden>
+                    <a href="../notification/page-notification.html">Notifications</a>
+                </label>
+
+            </div>
+            <div class="size20 dashboard-footer d-flex fd-column jc-center ai-center gap-20 flex-1">
+                <div class="footer-role d-flex jc-center ai-center">
+                    <div class="ico"> </div>
+                    <div class="d-flex fd-column gap-10">
+                        <span class="d-flex jc-start ai-center">Administrateur</span>
+                        <span class="size16 d-flex jc-start ai-center">Gestionnaire</span>
+                    </div>
+                </div>
+                <div class="footer-profile d-flex jc-center ai-center"><a href="#profile-config">Mon Profile</a></div>
+                <div class="footer-deconnexion d-flex jc-center ai-center"><a href="../../index.html">Deconnexion</a>
+                </div>
+            </div>
+        </div>
+
+    </div>
+    <div id="profile-config" class="position-absolute d-flex jc-center ai-center">
+        <div id="profile" class="profile raduis-20">
+            <div class="header-profile d-flex jc-between ai-center padding-50">
+                <div class="d-flex ai-center">
+                    <i class="fa-solid fa-circle-user"></i>
+                    <div id="mon-profile" class="size28">Mon Profile</div>
+                </div>
+                <a href="#body" id="sortie-profile" class="sortie style-none"></a>
+            </div>
+            <div class="bloc-image-profile d-flex fd-column ai-center jc-center gap-20">
+                <div class="image-profile"></div>
+                <div class="changer-image size24 padding-10 border-1px raduis-10">Changer la photo</div>
+            </div>
+            <div class="d-grid gt-columns-1fr-1fr padding-50 gap-20 row-gap-40">
+                <div>
+                    <label for="" class="line-height-2 size20">
+                        Nom:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="Administrateur" placeholder="" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label class="line-height-2 size20" for="">
+                        Prènom:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20" value="Jean"
+                            placeholder="" type="text">
+                    </label>
+                </div>
+                <div>
+                    <label class="line-height-2 size20" for="">
+                        Email:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="admin@gmail.com" placeholder="" type="email">
+                    </label>
+                </div>
+                <div>
+                    <label class="line-height-2 size20" for="">
+                        Téléphone:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="+2233 544 55 76 44" placeholder="" type="tel">
+                    </label>
+                </div>
+                <div class="col-2">
+                    <label class="line-height-2 size20" for="">
+                        Role:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15  size20"
+                            value="Gestionnaire" placeholder="" type="text">
+                    </label>
+                </div>
+                <div class="col-2">
+                    <label class="line-height-2 size20" for="">
+                        Derniere Connexion:
+                        <input class="width-100 border-1px height-50 raduis-10 padding-left-15 size20"
+                            value="15 Janvier 2025" placeholder="" type="text">
+                    </label>
+                </div>
+            </div>
+            <div class="profile-footer d-flex fd-row jc-end gap-20 padding-50">
+                <button class="height-50 border-1px width-150p raduis-10 d-flex centre size20"><a class="style-none"
+                        href="#body">Fermer</a> </button>
+                <button
+                    class="height-50 border-1px width-200p raduis-10 d-flex centre size20 bg-blue-button color-white">Sauvegarder</button>
+            </div>
+
+        </div>
+
+    </div>
+
+    <div class="contenu d-flex fd-column gap-40">
+        <div class="size28">Notifications & Alerte</div>
+        <div>Centre des notifications et gestion des alertes systèmes</div>
+        <div class="d-grid gt-columns-1fr-1fr-1fr-1fr gap-20 padding-bottom-20p ">
+            <div class="card d-flex gap-20 padding-20 border-1px raduis-20">
+                <div class="card-icon bg-blue-button d-flex ai-center jc-center"><i
+                        class="fa-solid color-white size32 fa-envelope"></i> </div>
+                <div class="d-flex fd-column gap-20">
+                    <span class="h1">12</span>
+                    <span class="color-secondaire size20">Produits en Stock</span>
+                </div>
+            </div>
+            <div class="card d-flex gap-20 padding-20 border-1px raduis-20">
+                <div class="card-icon bg-rose d-flex ai-center jc-center"> <i
+                        class="fa-solid fa-triangle-exclamation size32 color-white"></i> </div>
+                <div class="d-flex fd-column gap-20">
+                    <span class="h1">23</span>
+                    <span class="color-secondaire size20">Stock Faible</span>
+                </div>
+            </div>
+            <div class="card d-flex gap-20 padding-20 border-1px raduis-20">
+                <div class="card-icon bg-vert d-flex ai-center jc-center"><i
+                        class="fa-solid color-white size32 fa-calendar-day"></i> </div>
+                <div class="d-flex fd-column gap-20">
+                    <span class="h1">78</span>
+                    <span class="color-secondaire size20">Valeur Totale</span>
+                </div>
+            </div>
+            <div class="card d-flex gap-20 padding-20 border-1px raduis-20">
+                <div class="card-icon bg-gris d-flex ai-center jc-center"><i
+                        class="fa-solid color-white size32 fa-list"></i> </div>
+                <div class="d-flex fd-column gap-20">
+                    <span class="h1">12</span>
+                    <span class="color-secondaire size20">Commandes en Attente</span>
+                </div>
+            </div>
+        </div>
+        <div class=" d-flex gap-20  bg-white raduis-20 padding-20">
+            <div class="d-grid gap-10">
+                <div class="size20">Type :</div>
+                <div>
+                    <select class=" raduis-10 size16 width-150p height-50_" name="" id="">
+                        <option value="">Toutes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-grid gap-10">
+                <div class="size20">Priorité :</div>
+                <div>
+                    <select class=" raduis-10 size16 width-150p height-50_" name="" id="">
+                        <option class="size20" value="">Toutes</option>
+                    </select>
+                </div>
+            </div>
+            <div class="d-grid gap-10">
+                <div class="size20">Status</div>
+                <div class="">
+                    <select class=" raduis-10 size16 width-150p height-50_" name="" id="">
+                        <option class="size20" value="">Toutes</option>
+                    </select>
+
+                </div>
+            </div>
+            <div class="d-flex ai-end ">
+                <div
+                    class="detail border-1px height-50_ width-100p raduis-10 gap-10 bg-blue-button color-white d-flex jc-center ai-center size20 cursor-active">
+                    <i class="fa-solid fa-filter"></i>
+                    Filtre</div>
+
+            </div>
+
+
+        </div>
+        <div class="d-flex fd-column gap-20 width-100">
+
+            <div id="notif-cmd" class="width-100 height-100_  gap-20 d-flex fd-column jc-between ">
+                <div
+                    class="d-flex gap-20 ai-center jc-between width-100 bg-white raduis-20 border-left-transparent linear-gradient-rose padding-20">
+                    <div class="padding-20 d-flex gap-20 ai-center">
+                        <div class="width-50_ height-50_ rond bg-rose color-blue-button d-flex ai-center jc-center"><i
+                                class="fa-solid fa-triangle-exclamation size28"></i> </div>
+                        <div class="d-flex fd-column gap-20">
+                            <div class="size24 fw-bold">Stock critique detectée</div>
+                            <div id="on">Il ya 5 minute</div>
+                            <div>La commande #CMD-2024-003 a été expédiée avec succès. Numéro de suivi : FR123456789
+                            </div>
+                            <div class="d-flex gap-20">
+                                <div
+                                    class="width-150p height-50_ raduis-10 cursor-pointer d-flex ai-center jc-center fo bg-color-secondaire-claire">
+                                    Passer la comnde</div>
+                                <div
+                                    class="width-150p height-50_ raduis-10 cursor-pointer d-flex ai-center jc-center fo bg-white border-1px ">
+                                    Marquer comme lu</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div id="none">Il ya 5 minute</div>
+
+                </div>
+                <div
+                    class="d-flex gap-20 ai-center jc-between width-100 bg-body raduis-20 border-left-transparent linear-gradient-blue padding-20">
+                    <div class="padding-20 d-flex gap-20 ai-center">
+                        <div class="width-50_ height-50_ rond bg-blue-button d-flex ai-center jc-center"><i
+                                class="fa-solid size28 fa-circle-info"></i> </div>
+                        <div class="d-flex fd-column gap-20">
+                            <div class="size24 fw-bold">Nouvelle commande reçue</div>
+                            <div id="on">Il ya 5 minute</div>
+                            <div>Commande #CMD-2024-004 reçue de Marie Dubois pour un MacBook Pro 16" (€2,899.00)</div>
+                            <div class="d-flex gap-20">
+                                <div
+                                    class="width-150p height-50_ raduis-10 cursor-pointer color-white d-flex ai-center jc-center fo bg-blue-button">
+                                    Voir la commande</div>
+                                <div
+                                    class="width-150p height-50_ raduis-10 cursor-pointer d-flex ai-center jc-center fo bg-white border-1px ">
+                                    Marquer comme lu</div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <div id="none">Il ya 15 minute</div>
+
+                </div>
+                <div class="d-flex gap-20 ai-center jc-between width-100 bg-white raduis-20  padding-20">
+                    <div class="padding-20 d-flex gap-20 ai-center">
+                        <div class="width-50_ height-50_ rond bg-vert d-flex ai-center jc-center"><i
+                                class="fa-solid size28 fa-circle-check"></i> </div>
+                        <div class="d-flex fd-column gap-20">
+                            <div class="size24 fw-bold">Stock critique détecté</div>
+                            <div id="on">Il ya 5 minute</div>
+                            <div>Le produit "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes).
+                                Veuillez passer commande rapidement.</div>
+                            <div
+                                class="width-150p height-50_ raduis-10 cursor-pointer color-white d-flex ai-center jc-center fo bg-bleu-ciel">
+                                Suivre</div>
+
+                        </div>
+                    </div>
+                    <div id="none">Il ya 20 minute</div>
+
+                </div>
+                <div class="d-flex gap-20 ai-center jc-between width-100 bg-white raduis-20  padding-20">
+                    <div class="padding-20 d-flex gap-20 ai-center">
+                        <div class="width-50_ height-50_ rond bg-gris d-flex ai-center jc-center"> <i
+                                class="fa-solid color-blue-button fa-gear"></i> </div>
+                        <div class="d-flex fd-column gap-20">
+                            <div class="size24 fw-bold">Stock critique détecté</div>
+                            <div id="on">Il ya 5 minute</div>
+                            <div>Le produit "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes).
+                                Veuillez passer commande rapidement.</div>
+                            <div
+                                class="width-150p height-50_ raduis-10 cursor-pointer d-flex ai-center jc-center fo bg-white border-1px ">
+                                Voir details</div>
+
+                        </div>
+                    </div>
+                    <div id="none">Il ya 20 minute</div>
+
+                </div>
+                <div class="d-flex gap-20 ai-center jc-between width-100 bg-white raduis-20  padding-20">
+                    <div class="padding-20 d-flex gap-20 ai-center">
+                        <div class="width-50_ height-50_ rond bg-jaune d-flex ai-center jc-center"><i
+                                class="fa-solid fa-shield"></i> </div>
+                        <div class="d-flex fd-column gap-20">
+                            <div class="size24 fw-bold">Stock critique détecté</div>
+                            <div id="on">Il ya 5 minute</div>
+                            <div>Le produit "AirPods Pro 2" a atteint le seuil critique de stock (3 unités restantes).
+                                Veuillez passer commande rapidement.</div>
+                            <div
+                                class="width-150p height-50_ raduis-10 cursor-pointer d-flex ai-center jc-center fo bg-color-secondaire-claire">
+                                Securiser le cmpt</div>
+
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+        <div id="notification-footer" class=" d-flex jc-between">
+
+            <label class="d-flex jc-center ai-center gap-10" for="">
+                <input type="checkbox">
+                Selectionner tout
+
+            </label>
+
+            <div class="d-flex gap-20">
+                <div class="padding-20 raduis-10 border-1px d-flex gap-10"> <i class="fa-solid fa-check"></i> Marquer comme lu </div>
+                <div class="padding-20 raduis-10 border-1px d-flex jc-center gap-10 bg-color-secondaire-claire"> <i class="fa-solid fa-trash"></i> Supprimer </div>
+            </div>
+        </div>
+
+    </div>
+
+
+</body>
+
+</html>
