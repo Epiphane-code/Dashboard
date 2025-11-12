@@ -3,11 +3,36 @@
     margin: 0;
     padding: 0;
 }
+.trans-hover{
+    box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, 0.1);
+    transition: 1;
+}
 .trans-hover:hover{
-   transform: translateY(-3px);
+   transform: translateY(-2px);
+    box-shadow: 1px 1px 20px 5px rgba(0, 0, 0, 0.1);
+
 }
 .border-blue-hover:hover{
     border: 1px solid rgb(36, 111, 237);
+}
+.diagram{
+    cursor: pointer;
+}
+.diagram:hover{
+   transform: translateY(-2px);
+}
+
+.top-diagram{
+    display: none;
+    width: 20px;
+    height: 10px;
+    top: -30px;
+    left: calc(50% - 10px);
+    background-color: rgba(128, 128, 128, 0.5);
+    border-radius: 5px;
+}
+.diagram:hover .top-diagram{
+    display: flex;
 }
 
 .index-max{
@@ -36,6 +61,7 @@ body {
     color: #1e293b;
 
 }
+
 .bg-body{
     background-color: #f8fafc;
 }
